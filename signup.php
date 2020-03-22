@@ -56,11 +56,11 @@ error:function (){}
 													<h3>Create your account </h3>
 					
 
-				Name<input type="text" value=""  name="fname" autocomplete="off" required=""><br>
-				Number<input type="text" value=""  maxlength="10" name="mobilenumber" autocomplete="off" required pattern="[0-9]{10}"><br>
-		Email<input type="text" value=""  name="email" id="email" required=""><br>	
-		 <span id="user-availability-status" style="font-size:12px;"></span> 
-	password<input type="password" value=""  name="password" required=""><br>
+				<input type="text" value="" placeholder="Full Name" name="fname" autocomplete="off" required="">
+										<input type="text" value="" placeholder="Mobile number" maxlength="10" name="mobilenumber" autocomplete="off" required pattern="[0-9]{10}">
+								<input type="text" value="" placeholder="Email id" name="email" id="email" onBlur="checkAvailability()" autocomplete="off"  required="">	
+								<span id="user-availability-status" style="font-size:12px;"></span> 
+							<input type="password" value="" placeholder="Password" name="password" required="">	
 													<input type="submit" name="submit" id="submit" value="CREATE ACCOUNT">
 												</form>
 											</div>
